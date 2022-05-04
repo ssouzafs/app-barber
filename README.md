@@ -38,7 +38,7 @@ Antes de iniciar, renomeie arquivo ```.env.exemplo``` para ```.env```
 ~~~
 - Agora basta rodar as migrações para que sejam criadas as tabelas no banco de dados, execute o comando:
 ~~~php
-./vendor/bin/sail migrate
+./vendor/bin/sail migrate ou ./vendor/bin/sail migrate fresh
 ~~~
 - Note que existe uma **migration** a ser executada que é uma inserção de um usuário administrador com as credenciais, email: ```admin@stockbarber.com.br``` e senha: ```admin```. use-as para acessar o sistema em modo administrador.
 
