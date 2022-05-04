@@ -1,0 +1,82 @@
+.dashboard_content {
+    margin: auto;
+    max-width: $size-box-content;
+    border-radius: $radius-normal;
+    -webkit-border-radius: $radius-normal;
+    -moz-border-radius: $radius-normal;
+    //padding: 20px;
+
+    /** Cards Home */
+    .dashboard_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        article {
+            font-family: $font-family;
+            padding: 10px;
+            min-height: 140px;
+            height: auto;
+            //flex-basis: calc(35.30% - 40px);
+            flex-basis: calc(25.50% - 20px);
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+            border-radius: $radius-small;
+            -webkit-border-radius: $radius-small;
+            -moz-border-radius: $radius-small;
+
+            h2 {
+                font-size: 1.2em;
+                font-weight: 400;
+
+                p {
+                    font-size: .815em;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .dashboard_cards article {
+        flex-basis: 32.0% !important;
+        min-height: 130px !important;
+
+        h2 {
+            font-size: 1.1em !important;
+            font-weight: 300 !important;
+
+            p {
+                font-size: .6rem !important;
+                font-weight: 100 !important;
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .dashboard_cards article {
+        flex-basis: calc(50% - 10px) !important;
+        margin-bottom: 20px;
+        min-height: 130px !important;
+    }
+}
+
+@media(max-width: 650px) {
+    .dashboard_cards article {
+        flex-basis: 100% !important;
+        margin-bottom: 20px;
+        min-height: 130px !important;
+
+        h2 {
+            font-size: 1.2em !important;
+            font-weight: 300 !important;
+
+            p {
+                font-size: .6rem !important;
+                font-weight: 100 !important;
+            }
+        }
+    }
+}
